@@ -5,7 +5,7 @@ code = "A5 97 0E CD 3C F2 A0 F3 BF AF 24 18 FC E2 CB C9 06 63 BD 3A F2 CA B9 72 
 
 #array stores each hex seperated by space, after converting to binary string
 print(code.split())
-data = [bin(int(i, 16)) for i in code.split()]
+data = ['{0:08b}'.format(int(i, 16)) for i in code.split()]
 
 print(data)
 
